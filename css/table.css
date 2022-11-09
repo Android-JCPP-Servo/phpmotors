@@ -1,0 +1,30 @@
+.inventoryTable, th, tr, td {
+    /* border: 1px solid black; */
+    text-align: center;
+}
+.inventoryTable {
+    background-color: #3a3a3a;
+    width: 100%;
+}
+.inventoryTable th, .inventoryTable thead {
+    background-color: #4c96d7;
+    padding: 10px;
+}
+.inventoryTable tr, .inventoryTable td {
+    background-color: #ffffff;
+    padding: 10px;
+}
+select {
+    width: 66.67%;
+}
+.carName {
+    text-align: left;
+}
+
+/* .reviewTable, tr, td {
+    border: 1px solid #3a3a3a;
+} */
+.reviewTable td {
+    padding: 5px;
+    text-align: left;
+}

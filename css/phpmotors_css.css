@@ -1,0 +1,389 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Gemunu Libre', sans-serif;
+    font-size: 20px;
+    /* border: 1px solid black; */
+}
+
+*:before, *:after{
+    box-sizing: inherit;
+}
+
+body {
+    background-image: url("../images/site/small_check.jpg");
+    background-repeat: repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#wrapper {
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fff;
+    border: 5px solid #4c96d7;
+    border-radius: 5px;
+    height: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.main-header {
+    margin-bottom: 25px;
+}
+
+.cookieName {
+    margin-right: 10px;
+}
+
+.welcome {
+    font-weight: bold;
+}
+
+#logo {
+    float: left;
+    width: 100%;
+    height: auto;
+}
+
+#account, .user, .log-out {
+    padding-left: 15px;
+    text-align: center;
+    text-decoration: none;
+    color: #3a3a3a;
+}
+
+.user {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #3a3a3a;
+}
+.log-out, .welcome-message {
+    text-decoration: none;
+    color: #3a3a3a;
+}
+
+span {
+    font-size: 18px;
+}
+#remainingVehicle {
+    float: right;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #3a3a3a;
+}
+
+nav li {
+    float: left;
+}
+
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    background-color: #4c96d7;
+    color: #3a3a3a;
+    font-weight: bold;
+}
+
+.list li {
+    padding-bottom: 5px;
+}
+
+.reviews {
+    padding-top: 20px;
+    background-color: #ffffff;
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    font-size: 30px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+.error_message {
+    text-align: left;
+    padding-left: 15px;
+}
+
+main {
+    width: 100%;
+    height: auto;
+}
+
+#main_car {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+#delorean {
+    margin-top: 100px;
+    width: 100%;
+    height: auto;
+}
+
+b {
+    font-size-adjust: 0.75;
+}
+
+#delorean_text {
+    font-size-adjust: 0.74;
+}
+
+#own_now {
+    position: absolute;
+    top: 0px;
+    left: 16px;
+    color: #4c96d7;
+    height: 150px;
+}
+
+#own_today {
+    visibility: hidden;
+    width: 150px;
+    height: auto;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+[class*="col-"] {
+    width: 100%;
+}
+
+input[type="text"], input[type="password"], #invDescription, input[type="number"], select {
+    width: 100%;
+    margin: 8px 0;
+    display: inline-block;
+    border-radius: 4px;
+}
+
+label {
+    margin-top: 15px;
+}
+
+#showPwd {
+    background-color: #3a3a3a;
+    color: #ffffff;
+    padding: 0.25em 0.5em 0.25em 0.5em;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+form i {
+    margin-left: -30px;
+    cursor: pointer;
+}
+
+.register, .sign_in, #submitData, .update, .add_value, .review {
+    background-color: #4c96d7;
+    color: #3a3a3a;
+    font-weight: bold;
+    padding: 0.25em 0.5em 0.25em 0.5em;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.blue_background {
+    background-color: #4c96d7;
+    padding: 0.5em 0.75em 0.5em 0.75em;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.image_text {
+    text-decoration: none;
+    color: #3a3a3a;
+}
+.align_center {
+    text-align: center;
+}
+
+.upgrade {
+    width: 75px;
+    height: 75px;
+}
+
+.subtitles {
+    padding-left: 15px;
+    font-size-adjust: 0.74;
+}
+
+hr {
+    border: 3px solid #3a3a3a;
+}
+
+footer {
+    text-align: center;
+}
+
+/* Inventory Display */
+#inv-display {
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#inv-display li {
+    border: 1px #ccc solid;
+    list-style-type: none;
+    flex: 1 1 auto;
+    margin: 10px auto;
+    border-radius: 10px;
+    padding: 10px;
+    width: 100%;
+    min-height: 300px;
+    position: relative;
+}
+#inv-display a {
+    text-decoration: none;
+    color: #3a3a3a;
+    width: 100%;
+}
+#inv-display li img {
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+}
+.readName {
+    width: 33px;
+}
+.reviewField {
+    width: 100%;
+}
+.reviewText {
+    width: 100%;
+}
+#clientInitials {
+    width: 33%;
+}
+
+@media screen and (min-width: 411px) {
+    #wrapper {
+        max-width: 768px;
+    }
+    #logo {
+        width: 275px;
+    }
+    #account {
+        padding-right: 10px;
+        padding-top: 35px;
+        float: right;
+    }
+    h1 {
+        text-align: left;
+    }
+    #own_now {
+        width: 30%;
+        height: auto;
+    }
+    .subtitles {
+        font-size: 24px;
+        max-width: 49%;
+    }
+    input {
+        width: 100%;
+    }
+    .register, .sign_in {
+        min-width: 50%;
+        max-width: 60%;
+    }
+    .review {
+        width: 20%;
+    }
+    .log_out {
+        padding: 0;
+    }
+    .management {
+        font-size: 24px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    #wrapper {
+        max-width: 960px;
+    }
+    .main-header {
+        margin-bottom: 0px;
+    }
+    #own_today {
+        visibility: visible;
+        width: 150px;
+    }
+    b {
+        font-size: 30px;
+    }
+    #delorean_text {
+        font-size: 24px;
+    }
+    [class*="col-"] {
+        float: left;
+        padding: 15px;
+        height: 100%;
+    }
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+    .blue_background {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    #inv-display {
+		flex-flow: row wrap;
+		justify-content: flex-start;
+	}
+	#inv-display h2{
+		font-size: 1rem;
+	}
+	#inv-display li {
+		max-width: 200px;
+		flex: 1 0 auto;
+		text-align: center;
+		height: 300px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+	#inv-display div {
+		width: 100%;
+	}
+    #vehicleDetails div[class*="col-"] {
+        min-height: 275px;
+    }
+    h3 {
+        margin: 0 0 10px 0;
+    }
+    .bottomDiv {
+        height: 150px;
+    }
+}
